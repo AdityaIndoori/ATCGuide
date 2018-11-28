@@ -2885,7 +2885,6 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
-id textView
 id textView1
 id time
 id title

@@ -190,18 +190,13 @@ public class InstructionalAreas extends Activity {
 			if (otherSelected && !TextUtils.isEmpty(otherText.trim())) {
 				selectedInstructionalAreas.add("" + otherText.trim());
 			}
-			PersistenceBean.persistInstructionalAreas(
-					currentIntent.getStringExtra("studentid"),
-					selectedInstructionalAreas, context);
+			PersistenceBean.persistInstructionalAreas(currentIntent.getStringExtra("studentid"),selectedInstructionalAreas, context);
 			currentIntent.putStringArrayListExtra("selectedareas",
 					selectedInstructionalAreas);
 			currentIntent.putExtra("otherSelected", otherSelected);
 			currentIntent.putExtra("othertext", otherText);
-			PersistenceBean.persistCurrentId(
-					currentIntent.getStringExtra("studentid"), context);
-			PersistenceBean.persistIntent(
-					currentIntent.getStringExtra("studentid"),
-					currentIntent, context);
+			PersistenceBean.persistCurrentId(currentIntent.getStringExtra("studentid"), context);
+			PersistenceBean.persistIntent(currentIntent.getStringExtra("studentid"),currentIntent, context);
 		}
 		currentIntent.setClass(context, IEPReading.class);
     }
@@ -235,7 +230,6 @@ public class InstructionalAreas extends Activity {
 		} catch (Exception e) {
 			Log.e("ATGUIDE", "Other Exception: " + e.getMessage());
 		}
-
 	}
 
 	/**
@@ -421,7 +415,6 @@ public class InstructionalAreas extends Activity {
 		} catch (Exception e) {
 			Log.e("ATGUIDE", e.getMessage());
 		}
-
 	}
 
 	/**

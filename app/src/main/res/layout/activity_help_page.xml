@@ -13,9 +13,9 @@
 
     <ImageView
         android:id="@+id/back"
+        android:contentDescription="Back"
         android:layout_width="50dp"
         android:layout_height="match_parent"
-        android:layout_alignBottom="@+id/textView"
         android:layout_alignParentStart="true"
         android:padding="8dp"
         android:src="@drawable/back" />

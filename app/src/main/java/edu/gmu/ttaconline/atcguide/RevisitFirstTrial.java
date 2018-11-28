@@ -631,6 +631,8 @@ public class RevisitFirstTrial extends FragmentActivity {
 					ViewGroup.LayoutParams.WRAP_CONTENT,
 					ViewGroup.LayoutParams.WRAP_CONTENT);
 			for (int i=0; i<areaList.size(); i++) {
+				if (areaList.get(i).getAreaName().equals("AEM Navigator"))
+					continue;
 				// For each area get a Row
 				LinearLayout areaRow = (LinearLayout) inflater.inflate(
 						R.layout.areataskrow, null);
